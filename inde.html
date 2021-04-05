@@ -1,0 +1,90 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Minter Wallet | Minter Africa</title>
+    <meta name="description" content="Here you can generate your Minter wallet and send coins with just a few clicks.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favico.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/radio.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/sounds.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155340675-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-155340675-1');
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Minter <a href="https://www.minter.network" target="_blank">Africa</a> wallet</h1>
+      <form>
+        <div class="form-section">
+          <label>
+            Put Any digit between [0-9] or [A-F] Below To Continue ?
+            <input type="text" id="in" required>
+          </label>
+          <div class="form-description form-error" id="input-error"></div>
+          <span class="form-description"></span>
+        </div>
+
+        <div class="form-section control-group">
+          <div>Confirm you are not an Alien?</div>
+         
+          <label class="inline-label control control-radio">
+            I am (Human)
+            <input type="radio" name="mode" value="all">
+            <div class="control_indicator"></div>
+          </label>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="form-section">
+          <button type="button" id="gen-start">Start Mining New Wallet</button>
+          <button type="button" id="gen-stop">Stop Mining New Wallet</button>
+          <ul class="form-section">
+            <li>
+                <a class="btn btn-outline-secondary min-155 btn-my-axiory"  href="index.html" >(((-Send Coin-)))</a>
+            </li>
+            
+        </div>
+
+        <div class="divider" id="generation-divider" style="display: none;"></div>
+
+        <div id="generation-info" class="form-section" style="display: none;">
+          <label>
+            Minter address:
+            <strong class="address generated" id="out"></strong>
+          </label>
+          <span id="attempts" style="display: none">Mining Attempts: <span id="counter">0</span></span>
+        </div>
+
+        <div id="mnemonic-info" style="display: none;">
+          <div class="divider"></div>
+
+          <div class="form-section">
+            <div id="mnemonic-description">Seed phrase:</div>
+            <strong id="mnemonic"></strong>
+            <div id="mnemonic-description1"> Copy & Save.</div>
+          
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </body>
+
+  
+</html>
+
+
+
